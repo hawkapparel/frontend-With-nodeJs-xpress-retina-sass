@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+	include ./includes/head.jade
+	body
+
+	- var user = { description: 'hola soy una descripcion' }
+	- var authorised = false
+		#user
+			if user.description
+				h2 Description
+				p.description= user.description
+			else if authorised
+				h2 Description
+				p.description.
+				User has no description,
+				why not add one...
+			else
+				h1 Description
+				p.description User has no description
+
+	.style_a
+		prueba de estilo a
+
+	.style_b
+		prueba de estilo b
+
+	img(src='././images/sukhoi-pak-fa-wallpaper.jpg' id="image")
+	include ./includes/footer.jade

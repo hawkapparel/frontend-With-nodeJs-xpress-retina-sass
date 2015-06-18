@@ -1,0 +1,15 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+
+
+$color_red : #FF0000;
+$color_blue: #0000FF;
+$color_white: #fff;
+ 
+.style_a {
+  color: $color_red;
+}
+.style_b {
+  color: $color_blue;
+}
